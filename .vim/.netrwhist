@@ -1,0 +1,12 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhistcnt =1
+let g:netrw_dirhist_1='/home/kamisama/.config/fcitx5/conf'
+let g:netrw_dirhist_0='/home/kamisama/.config/fcitx/conf'
+let g:netrw_dirhist_9='/home/kamisama/.config/fcitx'
+let g:netrw_dirhist_8='/home/kamisama/.local/share/fcitx5/rime'
+let g:netrw_dirhist_7='/home/kamisama/.local/share/fcitx5'
+let g:netrw_dirhist_6='/home/kamisama/.local/share'
+let g:netrw_dirhist_5='/home/kamisama/.config/fcitx5'
+let g:netrw_dirhist_4='/home/kamisama/.config/fcitx'
+let g:netrw_dirhist_3='/home/kamisama/.davfs2/davfs2'
+let g:netrw_dirhist_2='/home/kamisama/.emacs'
