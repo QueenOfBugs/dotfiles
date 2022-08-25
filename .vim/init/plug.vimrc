@@ -2,7 +2,7 @@ call plug#begin('~/.vim/plugged')
 
 " Common plugin
 Plug 'preservim/nerdcommenter'
-Plug 'jiangmiao/auto-pairs'
+" Plug 'jiangmiao/auto-pairs'
 Plug 'tpope/vim-surround'
 Plug 'majutsushi/tagbar'
 Plug 'yggdroot/indentline'
