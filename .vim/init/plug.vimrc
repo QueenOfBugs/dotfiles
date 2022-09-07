@@ -1,4 +1,12 @@
-call plug#begin('~/.vim/plugged')
+if has('win32')
+    let $VIMRC_FOLDR = $HOME.'/vimfiles'
+elseif has('uniux')
+    let $VIMRC_FOLDR = $HOME.'/.vim'
+endif
+
+
+
+call plug#begin(expand()$VIMRC_FOLDER.'/plugged')
 
 " Common plugin
 Plug 'preservim/nerdcommenter'
