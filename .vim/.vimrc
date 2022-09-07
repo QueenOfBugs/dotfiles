@@ -1,9 +1,9 @@
 " let g:ale_completion_enabled = 1
 
-source ../.vim/init/plug.vimrc " plugin loader
-source ../.vim/init/plugins.vimrc " plugin settings
-source ../.vim/init/general.vimrc " plugin settings
-source ../.vim/init/function.vimrc " Custom function
+source init/plug.vimrc " plugin loader
+source init/plugins.vimrc " plugin settings
+source init/general.vimrc " plugin settings
+source init/function.vimrc " Custom function
 
 " set completeopt=menu,menuone,popup,noselect,noinsert,preview
 " let asdfasdf = system('pipenv --venv') .'/bin/python'
