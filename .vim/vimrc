@@ -9,10 +9,17 @@ if empty(glob(data_dir . '/autoload/plug.vim'))
 	autocmd VimEnter * PlugInstall --sync | source $MYVIMRC
 endif
 
-source init/plug.vimrc " plugin loader
-source init/plugins.vimrc " plugin settings
-source init/general.vimrc " plugin settings
-source init/function.vimrc " Custom function
+if has('win32')
+    let $VIMRC_FOLDR = $HOME.'/vimfiles'
+elseif has('uniux')
+    let $VIMRC_FOLDR = $HOME.'/.vim'
+endif
+
+source $VIMRC_FOLDR/init/plug.vimrc " plugin loader
+source $VIMRC_FOLDR/init/plugins.vimrc " plugin settings
+source $VIMRC_FOLDR/init/general.vimrc " plugin settings
+source $VIMRC_FOLDR/init/function.vimrc " Custom function
+
 
 " set completeopt=menu,menuone,popup,noselect,noinsert,preview
 " let asdfasdf = system('pipenv --venv') .'/bin/python'
