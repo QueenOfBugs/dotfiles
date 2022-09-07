@@ -8,10 +8,10 @@ Plug 'majutsushi/tagbar'
 Plug 'yggdroot/indentline'
 
 " Note taking
-Plug 'vimwiki/vimwiki'
+" Plug 'vimwiki/vimwiki'
 
 " Markdown
-Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app && yarn install'  }
+" Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app && yarn install'  }
 
 " Status bar
 Plug 'vim-airline/vim-airline'
