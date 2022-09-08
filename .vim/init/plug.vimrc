@@ -6,7 +6,7 @@ endif
 
 
 
-call plug#begin(expand()$VIMRC_FOLDER.'/plugged')
+call plug#begin(expand($VIMRC_FOLDER).'/plugged')
 
 " Common plugin
 Plug 'preservim/nerdcommenter'
