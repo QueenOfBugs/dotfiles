@@ -21,8 +21,8 @@ set smarttab
 
 " colorscheme gruvbox
 " colorscheme dracula
-" colorscheme industry
-colorscheme emacs
+colorscheme industry
+" colorscheme emacs
 set background=dark
 
 syntax on
