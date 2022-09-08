@@ -5,8 +5,8 @@
 " endif
 let plug_folder = has('win32')? $HOME.'\plugged':$HOME.'/plugged'
 " echo plug_folder
-
 call plug#begin(plug_folder)
+
 " Common plugin
 Plug 'preservim/nerdcommenter'
 " Plug 'jiangmiao/auto-pairs'
@@ -33,10 +33,10 @@ Plug 'majutsushi/tagbar'
 Plug 'yggdroot/indentline'
 
 " Note taking
-Plug 'vimwiki/vimwiki'
+" Plug 'vimwiki/vimwiki'
 
 " Markdown
-Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app && yarn install'  }
+" Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app && yarn install'  }
 
 " auto show the autocompletion pop menu
 " Plug 'vim-scripts/AutoComplPop'
@@ -109,5 +109,10 @@ Plug 'prabirshrestha/asyncomplete-lsp.vim'
 Plug 'prabirshrestha/asyncomplete-ultisnips.vim'
 
 " " configuration form  https://maciejzj.xyz/vim-lsp-and-autocompletion.html
+"
+
+" Colorscheme
+Plug 'dracula/vim', { 'as': 'dracula' }
+Plug 'mathofprimes/wildgrass'
 call plug#end()
 

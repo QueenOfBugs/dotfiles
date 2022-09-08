@@ -21,8 +21,13 @@ set smarttab
 
 " colorscheme gruvbox
 " colorscheme dracula
-colorscheme industry
+" colorscheme industry
 " colorscheme emacs
+" if &runtimepath =~ 'dracula'
+"     " echo "dracula installed"
+"     colorscheme dracula
+" endif
+colorscheme wildgrass
 set background=dark
 
 syntax on

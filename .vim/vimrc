@@ -10,15 +10,23 @@ if empty(glob(data_dir . '/autoload/plug.vim'))
 endif
 
 if has('win32')
-    let $VIMRC_FOLDR = $HOME.'/vimfiles'
+ source $HOME/vimfiles/init/plug.vimrc " plugin loader
+ source $HOME/vimfiles/init/plugins.vimrc " plugin settings
+ source $HOME/vimfiles/init/general.vimrc " plugin settings
+ source $HOME/vimfiles/init/function.vimrc " Custom function
 elseif has('uniux')
-    let $VIMRC_FOLDR = $HOME.'/.vim'
+ source $HOME/.vim/init/plug.vimrc " plugin loader
+ source $HOME/.vim/init/plugins.vimrc " plugin settings
+ source $HOME/.vim/init/general.vimrc " plugin settings
+ source $HOME/.vim/init/function.vimrc " Custom function
 endif
+" let VIMRC_FOLDR = has('win32') ? $HOME.'/vimfiles' : $HOME.'/.vim'
 
-source $VIMRC_FOLDR/init/plug.vimrc " plugin loader
-source $VIMRC_FOLDR/init/plugins.vimrc " plugin settings
-source $VIMRC_FOLDR/init/general.vimrc " plugin settings
-source $VIMRC_FOLDR/init/function.vimrc " Custom function
+
+" source VIMRC_FOLDR/init/plug.vimrc " plugin loader
+" source $VIMRC_FOLDR/init/plugins.vimrc " plugin settings
+" source $VIMRC_FOLDR/init/general.vimrc " plugin settings
+" source $VIMRC_FOLDR/init/function.vimrc " Custom function
 
 
 " set completeopt=menu,menuone,popup,noselect,noinsert,preview
