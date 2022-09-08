@@ -1,13 +1,12 @@
-if has('win32')
-    let $VIMRC_FOLDR = $HOME.'/vimfiles'
-elseif has('uniux')
-    let $VIMRC_FOLDR = $HOME.'/.vim'
-endif
+" if has('win32')
+"     let $VIMRC_FOLDR = $HOME.'/vimfiles'
+" elseif has('uniux')
+"     let $VIMRC_FOLDR = $HOME.'/.vim'
+" endif
+let plug_folder = has('win32')? $HOME.'\plugged':$HOME.'/plugged'
+" echo plug_folder
 
-
-
-call plug#begin(expand($VIMRC_FOLDER).'/plugged')
-
+call plug#begin(plug_folder)
 " Common plugin
 Plug 'preservim/nerdcommenter'
 " Plug 'jiangmiao/auto-pairs'
