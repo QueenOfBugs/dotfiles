@@ -10,6 +10,9 @@ set tabstop=2
 set expandtab
 set shiftwidth=4 " 一个tab替换成多少space"
 
+" edit setting
+set backspace=indent,eol,start
+
 set relativenumber
 " Coding setting
 set fileencodings=utf-8,ucs-bom,gb18030,gbk,gb2312,cp936
