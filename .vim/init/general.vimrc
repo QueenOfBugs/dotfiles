@@ -30,9 +30,13 @@ set smarttab
 "     " echo "dracula installed"
 "     colorscheme dracula
 " endif
-colorscheme wildgrass
-set background=dark
-
+if has('win32')
+    if has('gui') && &runtimepath =~ 'wildgrass'
+        colorscheme wildgrass
+    endif
+else  
+    colorscheme industry
+endif
 syntax on
 filetype plugin on
 filetype indent on
