@@ -14,7 +14,7 @@ if has('win32')
  source $HOME/vimfiles/init/plugins.vimrc " plugin settings
  source $HOME/vimfiles/init/general.vimrc " plugin settings
  source $HOME/vimfiles/init/function.vimrc " Custom function
-elseif has('uniux')
+elseif has('unix')
  source $HOME/.vim/init/plug.vimrc " plugin loader
  source $HOME/.vim/init/plugins.vimrc " plugin settings
  source $HOME/.vim/init/general.vimrc " plugin settings
